@@ -1,0 +1,24 @@
+shkala_input = int(input("1:фаренгейт\n 2:цельсия\n 3:кельвин\n выберите шкалу, из которой хотите перевести градусы: "))
+shkala_output = int(input("1:фаренгейт\n 2:цельсия\n 3:кельвин\n выберите, в какую шкалу будете переводить: "))
+gradys = int(input("введите температуру: "))
+
+if shkala_input == shkala_output:
+    print(gradys)
+
+if shkala_input == 1 and shkala_output ==2:
+    print(round((gradys - 32) * 5/9, 3))
+
+if shkala_input == 1 and shkala_output == 3:
+    print(round((gradys - 32) * 5/9 + 273.15, 3))
+
+if shkala_input == 2 and shkala_output == 1:
+    print(round((gradys * 9/5) + 32, 3))
+
+if shkala_input == 2 and shkala_output ==3:
+    print(round(gradys + 273.15, 3))
+
+if shkala_input == 3 and shkala_output == 1:
+    print(round((gradys - 273.15) * 9/5 +32, 3))
+
+if shkala_input == 3 and shkala_output == 2:
+    print(round(gradys - 273.15, 3))
